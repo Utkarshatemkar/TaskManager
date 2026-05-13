@@ -24,7 +24,7 @@ function TaskBoard({ employee, onBack, onUpdateTasks }) {
   return (
     
   
-    <div class="p-6">
+    <div className="p-6">
       <button
         onClick={onBack}
         className="mb-4 bg-gray-300 px-4 py-2 rounded hover:bg-gray-400"
@@ -43,7 +43,7 @@ function TaskBoard({ employee, onBack, onUpdateTasks }) {
   
 
       {tasks.length > 0 ? (
-        <div class="scrollbar-thumb-slate-900 scrollbar-track-slate-200 md:scrollbar-thumb-sky-700 ...">
+        
         <table className="w-full border-collapse border border-gray-300 ">
 
           <thead>
@@ -88,7 +88,7 @@ function TaskBoard({ employee, onBack, onUpdateTasks }) {
               </tr>
             ))}
           </tbody>
-        </table></div>
+        </table>
       ) : (
         <p className="text-gray-500">No tasks yet.</p>
       )}
